@@ -3,8 +3,8 @@
 # ========================================
 .data
     prompt_n: .asciiz "Indique o numero de inteiros no array: "
-    prompt_valor: .asciiz "Digite um numero: "
-    nova_linha: .asciiz "\n"  # Nova linha para formatação
+    prompt_value: .asciiz "Digite um numero: "
+    new_line: .asciiz "\n"  # Nova linha para formatação
     array: .space 400         # Espaço para até 100 inteiros (adota-se 4 bytes cada)
     n: .word 0                # Variável para armazenar o número de elementos
 
@@ -37,7 +37,7 @@ read_loop:
 
     # Mostra: "Digite um numero:"
     li $v0, 4
-    la $a0, prompt_valor
+    la $a0, prompt_value
     syscall
 
     # Lê número digitado
@@ -76,7 +76,7 @@ print_loop:
 
     # imprime nova linha
     li $v0, 4
-    la $a0, nova_linha
+    la $a0, new_line
     syscall
 
     addi $t1, $t1, 4
