@@ -1,3 +1,6 @@
+# ========================================
+# SEÇÃO DE DADOS
+# ========================================
 .data
     prompt_n: .asciiz "Indique o numero de inteiros no array: "
     prompt_valor: .asciiz "Digite um numero: "
@@ -5,8 +8,14 @@
     array: .space 400         # Espaço para até 100 inteiros (adota-se 4 bytes cada)
     n: .word 0                # Variável para armazenar o número de elementos
 
+# ========================================
+# SEÇÃO DE CÓDIGO EXECUTÁVEL
+# ========================================
 .text
 .globl main
+# ========================================
+# FUNÇÃO PRINCIPAL
+# ========================================
 main:
     # Exibe mensagem: "Indique o numero de inteiros no array: "
     li $v0, 4
@@ -58,7 +67,7 @@ print_sorted:
     la $t1, array        # base do array
 
 print_loop:
-    bge $t0, $t5, fim    # se i >= n, fim
+    bge $t0, $t5, end    # se i >= n, end
 
     # carrega array[i]
     lw $a0, 0($t1)
@@ -84,7 +93,7 @@ bubble_sort:
     li $t1, 0            # $t1 = i
 
 outer_loop:
-    bge $t1, $t5, sort_end    # se i >= n - 1, fim
+    bge $t1, $t5, sort_end    # se i >= n - 1, end
 
     li $t2, 0            # $t2 = j
 
@@ -116,6 +125,6 @@ next_i:
 sort_end:
     jr $ra               # Retorna para o main
 
-fim:
+end:
     li $v0, 10           # Encerra o programa
     syscall
