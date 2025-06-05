@@ -84,7 +84,9 @@ print_loop:
     j print_loop
 
 # ========================================
-# FUNÇÃO: BUBBLE SORT
+# FUNÇÃO: BUBBLE SORT (ALGORITMO DE ORDENAÇÃO)
+# Entrada: Nenhum parâmetro via registrador (usa variável global 'array' e 'n')
+# Saída:   Array ordenado em ordem crescente (em 'array')
 # ========================================
 bubble_sort:
     lw $t5, n               # $t5 = n
