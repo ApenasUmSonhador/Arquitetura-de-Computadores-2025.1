@@ -9,7 +9,6 @@ A estrutura do projeto segue a seguinte organização:
 ```yaml  
 Arquitetura-de-Computadores-2025.1/
 └── AP2/                           # Pasta com Avaliação Parcial 2 realizada  
-    ├── Apresentacao_AP2.pptx      # Apresentação em slides sobre a Avaliação Parcial 2
     ├── bubble_sorter.asm          # Implementação do array sorter
     ├── fatorial_calculator.asm    # Implementação da calculadora de fatorial
     └── ta_quente_ta_frio.asm      # Implementação do "Tá quente, ta frio"
