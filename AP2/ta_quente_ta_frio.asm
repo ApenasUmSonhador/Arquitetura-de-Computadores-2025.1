@@ -2,10 +2,13 @@
 # SEÇÃO DE DADOS
 # ========================================
 .data
-    prompt_temp: .asciiz "Digite a temperatura: "
-    msg_cold:   .asciiz "Tá frio\n"
-    msg_hot: .asciiz "Tá quente\n"
-    msg_show:   .asciiz "Tá show\n"
+    # Arte de boas-vindas
+    welcome_art: .asciiz "\n\+==================================================+\n\|.................Tá quente tá frio................|\n\|....Precisão absurda na análise da temperatura....|\n\|.................Não levar a sério................|\n\|..............Feito para aprendizado..............|\n\+==================================================+\n\                          ####                    \n\                          ####                    \n\                          ####                    \n\          ####            ####            ##      \n\          ####                          ######    \n\            ####      ############    ######      \n\                  ##################    ##        \n\                ######################            \n\                ########################          \n\              ##########################          \n\              ############################        \n\    ######    ############################  ######\n\    ######    ############################  ######\n\              ############################        \n\              ############################        \n\              ##########################          \n\                ######################            \n\                  ##################              \n\            ####    ##############    ####        \n\          ######                        ####      \n\          ####                            ##      \n\                          ####                    \n\                          ####                    \n\                          ####                    \n\                                                  \n\+==================================================+\n"
+    # Mensagens e variáveis
+    prompt_temp: .asciiz "Digite a temperatura (somente inteiros): "
+    msg_cold:   .asciiz "Tá frio por aí\n"
+    msg_hot: .asciiz "Tá quente aí viu\n"
+    msg_show:   .asciiz "Tá show oh\n"
 
 # ========================================
 # SEÇÃO DE CÓDIGO EXECUTÁVEL
@@ -14,6 +17,11 @@
 .globl main
 
 main:
+    # Exibe arte de boas vindas
+    li $v0, 4
+    la $a0, welcome_art
+    syscall
+
     # Exibe mensagem: "Digite a temperatura: "
     li $v0, 4
     la $a0, prompt_temp
