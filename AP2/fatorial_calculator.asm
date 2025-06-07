@@ -30,14 +30,16 @@ main:
     # Chama a função recursiva de fatorial
     jal     fatorial
 
+    move    $t0, $v0            # salva o resultado do fatorial
+
     # Exibe mensagem: "Fatorial = "
     li      $v0, 4
     la      $a0, result
     syscall
 
-    # Imprime o resultado do fatorial
-    li      $v0, 1
-    move    $a0, $v0            # $a0 = resultado do fatorial
+    # Imprime o resultado do fatorial (corretamente agora)
+    move    $a0, $t0            # coloca resultado salvo em $a0
+    li      $v0, 1              # código do syscall para imprimir int
     syscall
 
     # Imprime nova linha
