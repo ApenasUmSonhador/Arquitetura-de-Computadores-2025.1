@@ -2,6 +2,9 @@
 # SEÇÃO DE DADOS
 # ========================================
 .data
+    # Arte de boas-vindas
+    welcome_art: .asciiz "\n\+========================================================+\n\|......................BUBBLE SORT.......................|\n\|.................Clássico da ordenação..................|\n\+========================================================+\n\|  ____        _     _     _        ____             _   |\n\| | __ ) _   _| |__ | |__ | | ___  / ___|  ___  _ __| |_ |\n\| |  _ \\| | | | '_ \\| '_ \\| |/ _ \\ \\___ \\ / _ \\| '__| __||\n\| | |_) | |_| | |_) | |_) | |  __/  ___) | (_) | |  | |_ |\n\| |____/ \\__,_|_.__/|_.__/|_|\\___| |____/ \\___/|_|   \\__||\n\|                                                        |\n+========================================================+\n\"
+    # Mensagens e variáveis
     prompt_n: .asciiz "Indique o numero de inteiros no array: "
     prompt_value: .asciiz "Digite um numero: "
     new_line: .asciiz "\n"  # Nova linha para formatação
@@ -18,6 +21,11 @@
 # FUNÇÃO PRINCIPAL
 # ========================================
 main:
+    # Exibe arte de boas vindas
+    li $v0, 4
+    la $a0, welcome_art
+    syscall
+
     # Exibe mensagem: "Indique o numero de inteiros no array: "
     li $v0, 4
     la $a0, prompt_n
