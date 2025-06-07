@@ -2,6 +2,9 @@
 # SEÇÃO DE DADOS
 # ========================================
 .data
+    # Arte de boas-vindas
+    welcome_art: .asciiz "\n+=========================================+\n\|.................FATORIAL................|\n\|.............Base da recursão............|\n\+=========================================+\n\|   __       _             _       _   _  |\n\|  / _| __ _| |_ ___  _ __(_) __ _| | | | |\n\| | |_ / _` | __/ _ \\| '__| |/ _` | | | | |\n\| |  _| (_| | || (_) | |  | | (_| | | |_| |\n\| |_|  \\__,_|\\__\\___/|_|  |_|\\__,_|_| (_) |\n\+=========================================+\n"
+    # Mensagens e variáveis
     prompt:     .asciiz "Digite um numero: "
     result:     .asciiz "Fatorial = "
     newline:    .asciiz "\n"
@@ -17,6 +20,11 @@
 # FUNÇÃO PRINCIPAL
 # ========================================
 main:
+    # Exibe arte de boas vindas
+    li $v0, 4
+    la $a0, welcome_art
+    syscall
+
     # Exibe mensagem: "Digite um numero: "
     li      $v0, 4
     la      $a0, prompt
