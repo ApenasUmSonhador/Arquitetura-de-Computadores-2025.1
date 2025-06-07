@@ -12,6 +12,7 @@ Arquitetura-de-Computadores-2025.1/
     ├── bubble_sorter.asm          # Implementação do array sorter
     ├── fatorial_calculator.asm    # Implementação da calculadora de fatorial
     └── ta_quente_ta_frio.asm      # Implementação do "Tá quente, ta frio"
+    └── Mars4_5.jar                # Arquivo do Mars, responsável por rodar os programas
 ├── LICENSE                        # Licença estilo MIT sobre o projeto  
 └── README.md                      # Documentação do projeto  
 ```  
@@ -24,8 +25,8 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [`LICENSE`]
 
 ## Colaboradores  
 Trabalho de Arquitetura de Computadores com os devidos créditos para:  
-- [Antônio Cardoso do Nascimento Neto]()
+- [Antônio Cardoso do Nascimento Neto](https://github.com/CardosoNascimento)
 - [Arthur Vinicius Carneiro Nunes](https://github.com/ApenasUmSonhador)
-- [José Cleomon da Silva Junior]()
-- [Rayane da Silva Lima]()
-- [Samyra Vitória Lima de Almeida]()
+- [José Cleomon da Silva Junior](https://github.com/cleomon)
+- [Rayane da Silva Lima](https://github.com/Rayane-Silva-Lima)
+- [Samyra Vitória Lima de Almeida](https://github.com/samyraalmeida)
