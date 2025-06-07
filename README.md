@@ -12,12 +12,31 @@ Arquitetura-de-Computadores-2025.1/
     ├── bubble_sorter.asm          # Implementação do array sorter
     ├── fatorial_calculator.asm    # Implementação da calculadora de fatorial
     └── ta_quente_ta_frio.asm      # Implementação do "Tá quente, ta frio"
-    └── Mars4_5.jar                # Arquivo do Mars, responsável por rodar os programas
+└── utils/                         # Pasta com utilitários para facilitar o uso do projeto
+    ├── Mars4_5.jar                # Arquivo do Mars, responsável por rodar os programas
+    └── run.sh                     # Programa bash para facilitar uso do projeto
 ├── LICENSE                        # Licença estilo MIT sobre o projeto  
 └── README.md                      # Documentação do projeto  
 ```  
 ---  
+## Como rodar o projeto
 
+1. Certifique-se de ter o Java com JRE/JDK 9 ou superior instalado em sua máquina.
+    > **Observação:** O arquivo `Mars4_5.jar` é utilizado para executar os códigos em Assembly. Não é necessário instalar nada além do Java para rodar o projeto.
+2. Clone o repositório:
+    ```bash
+    git clone https://github.com/ApenasUmSonhador/Arquitetura-de-Computadores-2025.1.git
+    ```
+3. Dê permissão de execução ao script de inicialização:
+    ```bash
+    chmod +x ./utils/run.sh
+    ./utils/run.sh
+    ```
+3. Execute o script para rodar o projeto:
+    ```bash
+    ./utils/run.sh
+    ```
+5. Siga as instruções exibidas no terminal para escolher qual programa deseja executar.
 ## Licença  
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo [`LICENSE`](LICENSE) para mais informações.  
 
