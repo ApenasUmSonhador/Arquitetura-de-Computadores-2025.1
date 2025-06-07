@@ -5,6 +5,7 @@
     prompt_n: .asciiz "Indique o numero de inteiros no array: "
     prompt_value: .asciiz "Digite um numero: "
     new_line: .asciiz "\n"  # Nova linha para formatação
+    .align 2                # alinha na fronteira de 4 bytes (2² = 4 bytes) ideal para inteiros
     array: .space 400       # Espaço para até 100 inteiros (adota-se 4 bytes cada)
     n: .word 0              # Variável para armazenar o número de elementos
 
