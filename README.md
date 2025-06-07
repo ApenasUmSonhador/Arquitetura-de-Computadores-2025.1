@@ -11,13 +11,14 @@ Arquitetura-de-Computadores-2025.1/
 └── AP2/                           # Pasta com Avaliação Parcial 2 realizada  
     ├── bubble_sorter.asm          # Implementação do array sorter
     ├── fatorial_calculator.asm    # Implementação da calculadora de fatorial
-    └── ta_quente_ta_frio.asm      # Implementação do "Tá quente, ta frio"
+    └── ta_quente_ta_frio.asm      # Implementação do jogo bobo,"Tá quente, ta frio"
 └── utils/                         # Pasta com utilitários para facilitar o uso do projeto
     ├── Mars4_5.jar                # Arquivo do Mars, responsável por rodar os programas
     └── run.sh                     # Programa bash para facilitar uso do projeto
 ├── LICENSE                        # Licença estilo MIT sobre o projeto  
 └── README.md                      # Documentação do projeto  
-```  
+```
+> **Observação:** O programa `ta_quente_ta_frio.asm` é uma brincadeira boba que muito auxiliou no aprendizado de condicionais e recepção de inputs do usuário, mas não deve, de maneira alguma, ser levado a sério para fins de análise de temperatura.
 ---  
 ## Como rodar o projeto
 
